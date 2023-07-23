@@ -1,5 +1,9 @@
-@import './reset.css';
+@import './modules/reset.css';
+@import './modules/common.css';
+@import './modules/header.css';
+@import './modules/preview.css';
 
-* {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+body {
+  
 }
+

@@ -7,7 +7,128 @@
   <link rel="stylesheet" href="./fonts/font-famaly.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+<body class="body">
+  <header class="header header__wrapper">
+    <div class="header__content content">
+      <div class="header__top header__section" >
+        <div class="header__top--left header__contacts">
+          <p class="contacts__wrapper contacts__tel">
+            <a href="123456789" class="contacts__link">+123456789</a>
+          </p>
+          <p class="contacts__wrapper contacts__mail">
+            <a href="mailto:booking@travel.com" class="contacts__link">booking@travel.com</a>
+          </p>
+        </div>
+        <div class="header__top--right">
+          <div class="header__social--content">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="" class="social__links">
+                  <img src="./images/fb.svg" alt="facebook" title="facebook">
+                  facebook
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__links">
+                  <img src="./images/inst.svg" alt="instagram" title="instagram">
+                  instagram
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__links">
+                  <img src="./images/tw.svg" alt="twitter" title="twitter">
+                  twitter
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__account">
+            <button class="header__btn header__login">Log In</button>
+            <button class="header__btn header__signup active__btn">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom header__section" >
+        <div class="header__booking">
+          <p class="logo__wrapper">
+            <a href="#" class="logo__link">
+              <img class="logo_image" src="./images/booking-logo.svg" alt="main logo" width="40" height="40">
+              <span class="logo__text">Just Book It</span>
+            </a>
+          </p>
+        </div>
+        <div class="menu__wrapper">
+          <nav class="menu__content">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="" class="menu__link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Explore</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">booking</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Tickets</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="preview__wrapper section__wrapper">
+      <div class="preview__content content">
+        <div class="preview__text--wrapper">
+          <h1 class="preview__title">Travel The World</h1>
+          <p class="preview__text">Pulvinar rhoncus eget non vulputate varius ullamcorper enim arcu mauris. Pharetra augue amet sit cursus. Leo commodo neque neque praesent. Aliquet tincidunt maecenas elementum eu ipsum erat. Velit quisque morbi nisl accumsan auctor at at nec.</p>
+          <form action="" class="preview__form">
+            <fieldset class="form__wrapper">
+              <ul class="form__list">
+                <li class="form__item">
+                  <label for="from" class="form__label">From</label>
+                  <input id ="from" type="text" class="form__input form__location" placeholder="From" />
+                </li>
+                <li class="form__item">
+                  <label for="to" class="form__label">To</label>
+                  <input id="to" type="text" class="form__input form__location"  placeholder="To" />
+                </li>
+                <li class="form__item">
+                  <label for="date" class="form__label">Date</label>
+                  <input id="date" type="text" class="form__input form__date" placeholder="When" />
+                </li>
+                <li class="form__item">
+                  <label for="numbers" class="form__label">Numbers</label>
+                  <div class="form__input form__numbers select__custom">
+                    <select name="numbers-of-travelers" id="numbers">
+                      <option selected disabled>Number of travelers</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="form__item">
+                  <button type="submit" class="form__btn button">Search Your Fly</button>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
+  <p></p>
 </body>
 </html>
