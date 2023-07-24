@@ -1,0 +1,74 @@
+.destionation__text--wrapper {
+  width: 544px;
+  margin-right: 80px;
+}
+
+.destionation__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.destionation__description {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.destionation__link {
+  width: 200px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: var(--text-color-light);
+  background-color: var(--yellow);
+}
+
+.destionation__list--wrapper {
+  flex-basis: 960px;
+}
+
+.destionation__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.destionation__item {
+  max-width: 300px;
+}
+
+.destionation__image {
+  width: 100%;
+  margin-bottom: 12px;
+  height: 330px;
+  border-radius: 40px;
+  background: no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.destionation__details {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.destionation__details::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--yellow);
+  background: url('../../images/airplane.svg') no-repeat center;
+  background-size: 30px;
+}
+
+.destionation__details .destionation__country {
+  font-size: 24px;
+  font-weight: var(--semi-bold);
+  line-height: 1;
+  color: var(--yellow);
+}

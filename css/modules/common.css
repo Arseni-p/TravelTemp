@@ -9,14 +9,21 @@
   --yellow: #e0b100;
 }
 
-body {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-size: 20px;
+* {
+  box-sizing: border-box;
 }
 
 body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 20px;
   color: var(--text-color-dark);
   background-color: var(--bg-color-light);
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: var(--semi-bold);
+  padding-bottom: 40px;
 }
 
 .visually-hidden {
@@ -36,10 +43,17 @@ body {
   border: 1px solid red;
   display: block;
   margin: 0 auto;
-  padding: 0 120px;
+  padding: 80px 120px;
   max-width: 1920px;
 }
 
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 24px;
+}
 /* 
 1. transitions
 2. form inputs
