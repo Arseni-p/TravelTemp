@@ -3,8 +3,7 @@
 @import './modules/header.css';
 @import './modules/preview.css';
 @import './modules/description.css';
-
-body {
-  
-}
+@import './modules/services.css';
+@import './modules/subscribe.css';
+@import './modules/footer.css';
 

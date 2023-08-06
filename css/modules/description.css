@@ -18,8 +18,6 @@
   width: 200px;
   margin-bottom: 40px;
   font-size: 16px;
-  color: var(--text-color-light);
-  background-color: var(--yellow);
 }
 
 .destionation__list--wrapper {

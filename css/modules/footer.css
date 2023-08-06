@@ -1,0 +1,17 @@
+.footer__content .logo__link {
+  display: flex;
+  margin: 0 auto 40px;
+  width: fit-content;
+}
+
+.footer__content .menu__list {
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 104px;
+  border: solid var(--text-color-dark);
+  border-width: 1px 0;
+}
+.footer__content .menu__link {
+  font-size: 24px;
+  font-weight: var(--semi-bold);
+}
