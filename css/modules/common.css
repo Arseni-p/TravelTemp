@@ -52,8 +52,27 @@ h3 {
   align-items: center;
   height: 50px;
   border-radius: 24px;
+  line-height: 1;
   color: var(--text-color-light);
   background-color: var(--yellow);
+  border: 1px solid var(--yellow);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--yellow);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+a {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.2;
+  transition: opacity 0.2s ease-in-out;
 }
 /* 
 1. transitions

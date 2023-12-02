@@ -1,6 +1,6 @@
 'use strict';
 
-export const destionationInfoList = [
+export const destinationInfoList = [
   {
     city: "Tokyo",
     country: "Japan",

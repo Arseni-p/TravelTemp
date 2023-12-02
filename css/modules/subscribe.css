@@ -1,4 +1,6 @@
-.subscribe__content {
+.subscribe__content--item {
+  padding-top: 80px;
+  padding-bottom: 80px;
   border-radius: 40px;
   background-color: var(--yellow);
 }

@@ -1,17 +1,23 @@
 'use strict';
 
-import { destionationInfoList } from "./dataInfo.js"
+import { destinationInfoList } from "./dataInfo.js";
+import { headerAccountSection, getActiveBtn } from "./activeBtn.js";
 
-console.log(destionationInfoList);
+console.log(destinationInfoList);
 
-const destionationImagesItems = document.querySelectorAll('.destionation__item');
+const destinationImagesItems = document.querySelectorAll('.destination__item');
 
-destionationImagesItems.forEach((item, index) => {
-  const destionationImage = item.querySelector('.destionation__image');
-  const destionationCity = item.querySelector('.destionation__city');
-  const destionationCountry = item.querySelector('.destionation__country');
+destinationImagesItems.forEach((item, index) => {
+  const destinationImage = item.querySelector('.destination__image');
+  const destinationCity = item.querySelector('.destination__city');
+  const destinationCountry = item.querySelector('.destination__country');
   //if else
-  destionationImage.style.backgroundImage = `url(./images/${destionationInfoList[index].image}.webp)`;
-  destionationCity.innerHTML = `${destionationInfoList[index].city}`;
-  destionationCountry.innerHTML = `${destionationInfoList[index].country}`;
+  destinationImage.style.backgroundImage = `url(./images/${destinationInfoList[index].image}.webp)`;
+  destinationCity.innerHTML = `${destinationInfoList[index].city}`;
+  destinationCountry.innerHTML = `${destinationInfoList[index].country}`;
 });
+
+headerAccountSection.addEventListener('click', event => getActiveBtn(event.target))
+
+
+

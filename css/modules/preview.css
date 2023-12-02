@@ -92,7 +92,13 @@
   margin-left: auto;
   width: 222px;
   height: 50px;
-  line-height: 50px;
+  line-height: 1;
   border: 1px solid var(--yellow);
   border-radius: 25px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.form__btn:hover {
+  background-color: var(--yellow);
+  transition: background-color 0.2s ease-in-out;
 }

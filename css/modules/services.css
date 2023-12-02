@@ -1,12 +1,13 @@
 .services__content {
   display: flex;         
   min-height: 770px;
-  background: url('../../images/Illustration.png') no-repeat 750px bottom;
+  background: url('../../images/Illustration.png') no-repeat calc(100% - 215px) bottom;
   background-size: 834px 613px;
 }
 
 .services__list--wrapper {
-  width: 686px;
+  width: 706px;
+  padding-right: 20px;
 }
 
 .services__list {
@@ -53,6 +54,7 @@
 
 .services__offer--title {
   font-size: 48px;
+  text-align: right;
   line-height: 1;
   margin-bottom: 40px;
 }
