@@ -173,6 +173,11 @@
 
 
 @media screen and (max-width: 768px) {
+  .header__wrapper {
+    height: 330px;
+    overflow-x: hidden;
+  }
+
   .menu__btn {
     display: block; 
     position: absolute;
