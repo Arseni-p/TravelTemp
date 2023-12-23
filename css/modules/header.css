@@ -39,17 +39,25 @@
 .social__list {
   position: relative;
   display: flex;
-  padding: 0 40px;
+  justify-content: space-between;
+  min-width: 180px;
+  padding: 0 40px 0 0;
   font-size: 0;
   border-right: 1px solid var(--bg-color-light);
 }
 
-.social__item {
-  margin-right: 20px;
+.social__item,
+.social__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
 }
 
-.social__item:last-child {
-  margin-right: 0;
+.social__links img.facebook {
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
 }
 
 .header__account {
@@ -61,22 +69,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 100px;
   min-height: 25px;
   padding: 8px 16px;
   border-radius: 24px;
   color: var(--text-color-light);
+  border: 1px solid transparent;
 }
 
-.header__btn.active__btn {
-  border: 1px solid var(--yellow);
+.header__btn:hover {
+  border-color: var(--yellow);
+  transition: border-color 0.2s linear;
 }
 
 .header__login {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .header__bottom {
   font-size: 18px;
+}
+
+.logo__wrapper--mobile {
+  display: none;
 }
 
 .logo__link {
@@ -115,4 +130,138 @@
   display: flex;
   align-items: center;
   height: 100%;
+}
+
+.menu__btn {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__section {
+    height: 50px;
+  }
+
+  .header__top {
+    font-size: 14px;
+  }
+
+  .contacts__tel {
+    margin-right: 30px;
+  }
+
+  .social__list {
+    min-width: 160px;
+    padding: 0 20px;
+  }
+
+  .header__account {
+    padding-left: 20px;
+  }
+
+  .logo__text {
+    font-size: 22px;
+  }
+
+  .menu__list {
+    font-size: 16px;
+  }
+
+  .menu__item  {
+    margin-right: 30px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu__btn {
+    display: block; 
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    background: url('../../images/menu-open.svg') left top no-repeat;
+    transition: background-image 0.3s linear;
+    background-size: contain;
+  }
+
+  .menu__btn.menu__btn--close {
+    background: url('../../images/menu-close.svg') left top no-repeat;
+    background-size: contain;
+    transition: background-image 0.3s linear;
+  }
+  
+  .logo__wrapper--mobile {
+    padding: 10px;
+    display: block;
+    width: fit-content;
+  }
+
+  .header__content {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: right 0.3s ease-in-out;
+    width: var(--mobile-nav-width);
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .header__content.header__content--open {
+    right: 0;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .header__section {
+    height: auto;
+  }
+
+  .header__top {
+    font-size: 12px;
+  }
+
+  .header__top,
+  .header__top--left,
+  .header__top--right,
+  .header__bottom,
+  .header__section .menu__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__wrapper, 
+  .header__social--content,
+  .header__account {
+    margin-bottom: 10px;
+  }
+
+  .contacts__tel {
+    margin-right: 0;
+  }
+
+  .social__list {
+    max-width: 100px;
+    border-color: transparent;
+  }
+
+  .header__booking .logo__wrapper {
+    display: none;
+  }
+
+  .header__bottom {
+    text-align: left;
+  }
+
+  .header__section .menu__list {
+    margin: 0;
+  }
+
+  .header__section .menu__item {
+    margin: 0 auto 20px;
+  }
+
+  .header__section .menu__item:last-child {
+    margin-bottom: 0;
+  }
 }

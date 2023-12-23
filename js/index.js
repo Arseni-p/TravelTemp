@@ -1,7 +1,8 @@
 'use strict';
 
 import { destinationInfoList } from "./dataInfo.js";
-import { headerAccountSection, getActiveBtn } from "./activeBtn.js";
+import { headerAccountSection, getActiveBtn } from "./accountBtn.js";
+import { menuBtn, clickMenuBtn } from "./menuMobile.js";
 
 console.log(destinationInfoList);
 
@@ -19,5 +20,6 @@ destinationImagesItems.forEach((item, index) => {
 
 headerAccountSection.addEventListener('click', event => getActiveBtn(event.target))
 
+menuBtn.addEventListener('click', event => clickMenuBtn())
 
 

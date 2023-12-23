@@ -1,5 +1,5 @@
 .destination__text--wrapper {
-  width: 560px;
+  max-width: 560px;
   padding-right: 20px;
 }
 
@@ -10,7 +10,6 @@
 
 .destination__description {
   margin-bottom: 40px;
-  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -73,7 +72,8 @@
   }
 
   .destination__text--wrapper {
-    width: 1000px;
+    max-width: 1000px;
+    transition: max-width 0.5s ease-in-out;
     margin: 0 auto 40px;
     padding: 0;
     text-align: center;
@@ -84,6 +84,66 @@
   }
 
   .destination__list--wrapper {
+    flex-basis: 750px;
     margin: 0 auto;
+  }
+
+  .destination__list {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .destination__image {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .destination__text--wrapper {
+    max-width: 700px;
+  }
+
+  .destination__list--wrapper {
+    flex-basis: 500px;
+  }
+
+  .destination__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .destination__image {
+    /* height: 200px; */
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .destination__list--wrapper {
+    flex-basis: 240px;
+  }
+
+  .destination__list {
+    grid-template-columns: 1fr;
+  }
+
+  .destination__details::after {
+    width: 30px;
+    height: 30px;
+  }
+
+  .destination__details {
+    font-size: 12px;
+  }
+
+  .destination__details .destination__country {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .destination__text--wrapper,
+  .destination__description {
+    margin-bottom: 20px;
   }
 }
